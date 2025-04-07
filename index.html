@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div  class="header">
+        <div class="but_div_1">
+        <a>Library</a>
+        </div>
+        <div id="but_div">
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="popup" >
+                <div class="popuptext" id="myPopup">
+                    <div class="x">
+                        <button class="but1"  id="close">X</button>
+                    </div>
+                    <div class="pop_up">
+                        <div class=pop_up1>
+                            <form id="form" name="form" method="POST" >
+                            <div class="pop_up2">   
+                                <div class="pop_up1_1">
+                                <label for="title">Title : </label>
+                                </div>
+                                <div class="pop_up1_2">
+                                    <input type="text" id="title"  placeholder="Title"  name="title" required>
+                                </div>
+                            </div>    
+                            <div class="pop_up2">
+                                <div class="pop_up1_1">
+                                <label for="author">Author : </label>
+                                </div>
+                                <div class="pop_up1_2">
+                                    <input type="text" id="author" name="author" placeholder="Author" required> 
+                                </div>
+                            </div>   
+                            <div class="pop_up2">
+                                <div class="pop_up1_1">
+                                <label for="pages">Pages : </label>
+                                </div>
+                                <div class="pop_up1_2">
+                                    <input type="number" id="pages" name="pages" placeholder="Pages" required>
+                                </div>
+                            </div>    
+                            <div class="pop_up2">
+                                <div class="pop_up1_1">
+                                <label for="pages">Read : </label>
+                                </div>
+                                <div class="pop_up1_2">
+                                    <input type="checkbox" name="read" id="read" value="">
+                                </div>
+                            </div>
+                            <div class="pop_up1_3">
+                                <button type="submit" class="but1" id="btn">Add Book</button>
+                            </div>   
+                        </form>
+                        </div>
+                        <div class="text">
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+            <div class="container2">
+                <div class="table1">  
+                    <table id="table">
+                        <thead>
+                        <tr>
+                        <td>ID</td>
+                        <td>Title</td>
+                        <td>Author</td>
+                        <td>Pages</td>
+                        <td>Read</td>
+                        <td>Delete</td>
+                        </tr>  
+                        </thead>
+                        <tbody id="t_body"></tbody>
+                    </table>       
+                </div>        
+            </div>	
+        </div>
+    </div> 
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
