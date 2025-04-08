@@ -6,8 +6,8 @@ var myLibrary = [{
   "read": 'yes'
  
 }];
-populate(myLibrary)//show the table
-function populate(myLibrary) {
+show(myLibrary)//show the table
+function show(myLibrary) {
 let tbody = document.getElementById('t_body')
 let tableHtml = ''
 myLibrary.forEach((obj,index) => {
@@ -29,7 +29,7 @@ const editT = (index) => {
 const obj = myLibrary[index];
 var id_remove=obj.id;// the id of the object
 myLibrary.splice(myLibrary.findIndex(a => a.id === id_remove.id) , 1)//this will remove the object 
-populate(myLibrary);
+show(myLibrary);
 console.log(obj.id)//you can remove this
 }
 function Book(id,title, author, pages, read) {
@@ -66,7 +66,7 @@ var list_n = new Book(id_value, title_value, author_value, pages_value, read_val
 myLibrary.push(list_n);
 console.log(myLibrary);
 /////////////////////////////////////////////////////////////////////////////////////
-populate(myLibrary)
+show(myLibrary)
 };
 var but = document.createElement('button');
 but.innerText="+ Add new book";
